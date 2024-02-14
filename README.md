@@ -26,12 +26,14 @@ The Company Database Management System is built upon a robust PHP-driven MySQL d
 - **Handlebars:** For templating and rendering HTML pages.
 - **MySQL:** For the relational database management system.
 
-## How to Use
+## Complilation Instructions
 1. Ensure that you have the necessary dependencies installed, including Node.js, PHP, and MySQL.
 2. Clone the repository to your local machine.
-3. Set up the MySQL database and configure the connection details in the PHP files.
-4. Start the Node.js server.
-5. Access the web application through your preferred web browser.
+3. 3. Navigate to the project directory.
+4. Set up the MySQL database and configure the connection details in the PHP files.
+5. Start the Node.js server by running the command:
+    `node main.js`
+6. Access the web application through your preferred web browser using the URL provided by in the terminal.
 
 ## Future Enhancements
 - Implement user authentication and authorization for secure access to the database.
