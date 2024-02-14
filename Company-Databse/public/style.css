@@ -1,0 +1,60 @@
+/*table width should take up the full page with space from the header, with collapsible borders upon window resizing*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/*center the text in each cell, make it white text on a black backgtround with white boarders do distinguish column headers*/
+th {
+    background-color: black; 
+    color: white; 
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; 
+}
+
+/*center the text with some boarders and padding*/
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/*makes even rows slightly lighter*/
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/*entire text is centered and aligned*/
+body, h1, h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*add font style and padding ot the body*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/*h1 and h2 tags have padded white text with boarders filled with light blue*/
+h1, h2 {
+    color: white; 
+    border: 2px solid #33aaff;
+    background-color: #33aaff;
+    padding: 10px;
+}
+
+/*links are light blue*/
+a {
+    color: #33aaff; 
+}
+
+/*footers are centered and padded*/
+footer {
+    text-align: center;
+    padding: 10px;
+}

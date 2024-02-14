@@ -1,0 +1,66 @@
+<!-- link JavaScript and CSS files -->
+<link rel="stylesheet" href="/static/style.css">
+<script defer src="/static/filterEmployee.js"></script>
+<script defer src="/static/searchEmployee.js"></script>
+
+<h1>Current Employees</h1>
+
+<!-- print project info after filtering -->
+{{#if projectInfo}}
+    <h4>Project {{projectInfo.Pnumber}}: {{projectInfo.Pname}} located in {{projectInfo.Plocation}}.</h4>
+{{/if}}
+
+<!-- print query info after searching -->
+{{#if searchQuery}}
+    <h4>Search by first names starting with '{{searchQuery}}'</h4>
+{{/if}}
+
+<!-- print table with data from the database -->
+<table id='EmployeeTable'>
+    <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Salary</th>
+        <th>Dno</th>
+    </thead>
+   <tbody>
+		{{#each employees}}
+		<tr>
+			<td>{{Fname}}</td>
+			<td>{{Lname}}</td>
+			<td>{{Salary}}</td>
+			<td>{{Dno}}</td>
+		</tr>
+		{{/each}}
+	</tbody>
+</table>
+
+<br>
+
+<!-- load project options for filtering -->
+<div id="filterByProject">
+    <label for="projectFilter">Filter Employees by Project:</label>
+    <select id="projectFilter">
+        {{#each projects}}
+            <option value="{{Pnumber}}">{{Pname}}</option>
+        {{/each}}
+    </select>
+    <button onclick="filterEmployeeByProject()">Filter</button>
+    <button onclick="clearProjectFilter()">Clear Filter</button>
+</div>
+
+<br>
+
+<!-- implement an input field to search the database for employees by first name -->
+<div id="searchByFirstName">
+    <label for="first_name_search_string">Search all employees for first names starting with:</label>
+    <input type="text" id="first_name_search_string">
+    <button onclick="searchEmployeeByFirstName()">Search</button>
+    <button onclick="clearFirstNameSearch()">Clear Search</button>    
+</div>
+
+<br>
+<a href="/index.html">Back to Home</a>
+<footer>
+    <p>&copy; faksm 2023</p>
+</footer>
