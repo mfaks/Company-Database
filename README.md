@@ -1,4 +1,4 @@
-# TalentTrack
+# TalentTracker
 ## Introduction
 TalentTrack is a solution designed to efficiently manage employee data within a company. This system uses JavaScript, PHP, HTML/CSS, Node.js, Express.js, Handlebars, and MySQL, to offer a scalable relational database and a dynamic web application for data visualization and analysis.
 
