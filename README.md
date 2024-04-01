@@ -1,6 +1,6 @@
 # TalentTracker
 ## Introduction
-TalentTrack is a solution designed to efficiently manage employee data within a company. This system uses JavaScript, PHP, HTML/CSS, Node.js, Express.js, Handlebars, and MySQL, to offer a scalable relational database and a dynamic web application for data visualization and analysis.
+TalentTracker is a solution designed to efficiently manage employee data within a company. This system uses JavaScript, PHP, HTML/CSS, Node.js, Express.js, Handlebars, and MySQL, to offer a scalable relational database and a dynamic web application for data visualization and analysis.
 
 ## Description
 The Company Database Management System uses a PHP-driven MySQL database, providing a scalable and efficient solution for storing and managing employee data. The system is connected to a REST API, allowing users to perform operations such as creating, removing, updating, and deleting records through an intuitive user interface, optimizing data management.
